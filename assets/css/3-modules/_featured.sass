@@ -1,0 +1,95 @@
+.featured
+	background: $silver
+
+	.lockup
+		padding: 15px
+
+		h3
+			margin: 0
+			text-align: center
+			text-transform: uppercase
+			padding-bottom: 10px
+			letter-spacing: 5px
+
+.event-thumbs
+	max-width: 960px
+	margin: 0 auto
+	padding-bottom: 30px
+	+clearfix
+
+	.event-thumb
+		display: block
+		width: 33%
+		padding-top: 15%
+		float: left
+		position: relative
+		overflow: hidden
+
+		background:
+			image: url(../img/208H.jpg)
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+		.event-overlay
+			+position(absolute, 100% 0 null 0)
+			height: 100%
+			background: fade-out($lightest-blue, 0.4)
+			+transition
+
+			strong
+				display: block
+				padding: 10px
+				color: $white
+				font-size: 24px
+
+		&:hover .event-overlay
+			+position(absolute, 40% 0 null 0)
+
+	.event-thumb1
+		@extend .event-thumb
+		background:
+			image: url(../img/featured/1.jpg)
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+	.event-thumb2
+		@extend .event-thumb
+		background:
+			image: url(../img/featured/2.jpg)
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+	.event-thumb3
+		@extend .event-thumb
+		background:
+			image: url(../img/featured/3.jpg)
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+	.event-thumb4
+		@extend .event-thumb
+		background:
+			image: url(../img/featured/4.jpg)
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+	.event-thumb5
+		@extend .event-thumb
+		background:
+			image: url(../img/featured/5.jpg)
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+	.event-thumb6
+		@extend .event-thumb
+		background:
+			image: url(../img/featured/6.jpg)
+			position: center center
+			repeat: no-repeat
+			size: cover
